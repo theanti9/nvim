@@ -45,4 +45,5 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+    use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 end)
