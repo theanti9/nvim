@@ -46,4 +46,9 @@ return require('packer').startup(function()
     use 'nvim-tree/nvim-web-devicons'
     use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
     use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+    use {'fatih/vim-go'}
+    use {'lewis6991/gitsigns.nvim', config = function()
+        require('gitsigns').setup()
+    end}
+    use {'dense-analysis/ale'}
 end)
