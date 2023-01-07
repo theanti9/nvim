@@ -18,4 +18,5 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 
 
 lsp.setup()
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
